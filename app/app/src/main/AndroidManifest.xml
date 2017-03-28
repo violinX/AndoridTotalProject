@@ -15,6 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Activity.ShowDemoDialogActivity" >
+        </activity>
+        <activity android:name=".Activity.ShowDemoRecyclerViewActivity" >
+        </activity>
+        <activity android:name=".Activity.LoginActivity" >
+        </activity>
     </application>
 
 </manifest>

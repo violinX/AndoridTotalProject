@@ -3,10 +3,12 @@ package com.example.wangalei.myapplication.Utils;
 import java.security.MessageDigest;
 
 /**
+ * SHA_1 加密工具类
  * Created by wangalei on 2017/3/29.
  * 调用时传入需要加密字符串，返回SHA_1加密后的字符串
  */
-public class Utils_SHA_1 {
+public class UtilsSHA1 {
+
     public static String getSha1(String str) {
         if (str == null || str.length() == 0) {
             return null;

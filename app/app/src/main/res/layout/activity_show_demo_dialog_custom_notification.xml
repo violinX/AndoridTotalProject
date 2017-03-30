@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_rounded"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -26,30 +27,31 @@
             android:layout_alignParentTop="true"
             android:layout_margin="@dimen/activity_vertical_margin"
             android:gravity="left"
-            android:textColor="@color/gray"
-            android:textSize="@dimen/TextView_small_size"
             android:text="1、这是一个简单的用户须知，希望以后可以用到这个简单的demo。\n
 2、这里在Xml输入中加入换行符实现了换行。
 3、而这里是手动换行的样子，是不是与上一行存在差距？
 4、下方的两个按钮是在LinearLayout中平分宽度的按钮。
 5、背景的样式是一个设定的样式，还是蛮不错的，至少我觉的是这样的。样式还决定着弹出dialog后的样子。
-6、请注意，按钮是圆角。
+6、请注意，dialog的背景是圆角。
 "
-            />
+            android:textColor="@color/gray"
+            android:textSize="@dimen/TextView_small_size" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_alignParentBottom="true">
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:layout_weight="1" />
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:layout_weight="1" />
         </LinearLayout>
     </RelativeLayout>
 </LinearLayout>

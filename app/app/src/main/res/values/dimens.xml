@@ -7,4 +7,10 @@
     <dimen name="layout_Right_margin">8dp</dimen>//右侧布局默认间距
     <dimen name="TextView_big_size">18sp</dimen>//TextView默认大字体
     <dimen name="TextView_small_size">12sp</dimen>//TextView默认小字体
+    <!--圆角大小 -->
+    <dimen name="all_radius">5dp</dimen>//全部圆角
+    <dimen name="top_Left_Radius">5dp</dimen>//左上角
+    <dimen name="top_Right_Radius">5dp</dimen>//右上角
+    <dimen name="bottom_Left_Radius">5dp</dimen>//TextView默认小字体
+    <dimen name="bottom_Right_Radius">5dp</dimen>//TextView默认小字体
 </resources>

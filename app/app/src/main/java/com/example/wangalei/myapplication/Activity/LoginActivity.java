@@ -34,7 +34,7 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener 
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.tv_GoDemo:
-                Intent intent=new Intent(LoginActivity.this, ShowDemoDialogActivity.class);
+                Intent intent=new Intent(LoginActivity.this, NavigationCarouselActivity.class);
                 startActivity(intent);
                 break;
         }

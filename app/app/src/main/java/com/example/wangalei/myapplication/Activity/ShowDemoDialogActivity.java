@@ -1,13 +1,15 @@
 package com.example.wangalei.myapplication.Activity;
 
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -28,6 +30,9 @@ public class ShowDemoDialogActivity extends AppCompatActivity implements OnClick
     private Button showdemo_dialog_8;
     int yourChoice;//第3个Dialog列表使用，用于记录选择的值。
     ArrayList<Integer> yourChoices = new ArrayList<>();//第4个Dialog列表使用，用于记录多选。
+    private AlertDialog menuDialogout;//自定义dialog使用
+    private Button bt_cancel;
+    private Button bt_confirm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +60,7 @@ public class ShowDemoDialogActivity extends AppCompatActivity implements OnClick
         showdemo_dialog_6.setOnClickListener(this);
         showdemo_dialog_7.setText("一个带有输入框的dialog");
         showdemo_dialog_7.setOnClickListener(this);
+        showdemo_dialog_8.setText("一个自定义的dialog，样式根据XML决定，实现按钮的监听");
         showdemo_dialog_8.setOnClickListener(this);
     }
 
@@ -84,6 +90,14 @@ public class ShowDemoDialogActivity extends AppCompatActivity implements OnClick
                 break;
             case R.id.showdemo_dialog_8:
                 dialog_8();
+                break;
+            case R.id.bt_cancel:
+                Toast.makeText(this, "点击取消", Toast.LENGTH_SHORT).show();
+                menuDialogout.cancel();
+                break;
+            case R.id.bt_confirm:
+                Toast.makeText(this, "点击确认", Toast.LENGTH_SHORT).show();
+                menuDialogout.cancel();
                 break;
         }
     }
@@ -279,6 +293,19 @@ public class ShowDemoDialogActivity extends AppCompatActivity implements OnClick
     }
 
     protected void dialog_8() {
-
+        //dialog 不能用Application的Context
+        menuDialogout = new AlertDialog.Builder(this, R.style.style_Dialog_Service).create();
+        menuDialogout.show();
+        Window window = menuDialogout.getWindow();
+        window.setContentView(R.layout.activity_show_demo_dialog_custom_notification);
+        window.setGravity(Gravity.CENTER); //设置对话框在界面底部显示
+        WindowManager.LayoutParams params = window.getAttributes();
+        params.width = (this.getWindowManager().getDefaultDisplay().getWidth()) / 4 * 3;  //设置对话框的宽度为屏幕宽 （此处得到的是我一开始获得并存放起来的屏幕宽）
+        window.setAttributes(params);//此句代码一定要放在show()后面，否则不起作用
+        menuDialogout.setCanceledOnTouchOutside(true);
+        bt_cancel = (Button) window.findViewById(R.id.bt_cancel);
+        bt_confirm = (Button) window.findViewById(R.id.bt_confirm);
+        bt_cancel.setOnClickListener(this);
+        bt_confirm.setOnClickListener(this);
     }
 }

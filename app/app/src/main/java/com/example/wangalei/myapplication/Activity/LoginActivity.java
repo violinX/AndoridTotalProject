@@ -14,8 +14,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.wangalei.myapplication.R;
-import com.example.wangalei.myapplication.Utils.L;
 import com.example.wangalei.myapplication.Utils.UtilsPublicStaticValues;
+
+import static com.example.wangalei.myapplication.Utils.L.v;
+import static com.example.wangalei.myapplication.Utils.T.showShort;
 
 public class LoginActivity extends AppCompatActivity implements OnClickListener {
     private RelativeLayout login_layout;
@@ -26,7 +28,8 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        L.v("开始奇妙的旅程！");
+        v("开始奇妙的旅程！");
+        showShort(this,"开始奇妙的旅程！");
         initView();
     }
 

@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.wangalei.myapplication.R;
+import com.example.wangalei.myapplication.Utils.L;
 import com.example.wangalei.myapplication.Utils.UtilsPublicStaticValues;
 
 public class LoginActivity extends AppCompatActivity implements OnClickListener {
@@ -25,6 +26,7 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        L.v("开始奇妙的旅程！");
         initView();
     }
 

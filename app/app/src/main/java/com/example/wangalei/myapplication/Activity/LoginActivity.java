@@ -16,8 +16,10 @@ import android.widget.Toast;
 import com.example.wangalei.myapplication.R;
 import com.example.wangalei.myapplication.Utils.UtilsPublicStaticValues;
 
+import static com.example.wangalei.myapplication.Utils.UtilsSharedPreferences.get;
 import static com.example.wangalei.myapplication.Utils.L.v;
 import static com.example.wangalei.myapplication.Utils.T.showShort;
+import static com.example.wangalei.myapplication.Utils.UtilsSharedPreferences.put;
 
 public class LoginActivity extends AppCompatActivity implements OnClickListener {
     private RelativeLayout login_layout;
@@ -28,8 +30,9 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        v("开始奇妙的旅程！");
         showShort(this,"开始奇妙的旅程！");
+        put(this,"start","一次简单的数据写入测试");
+        v(get(this,"start","")+"");
         initView();
     }
 

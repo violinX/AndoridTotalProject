@@ -10,5 +10,6 @@ public class UtilsPublicStaticValues {
     public static final String TAG = "App Project Log";//log工具类输出时默认TAG
     public static boolean isDebug = true;//log工具类输出时默认允许输出，如果为false则不输出
     public static boolean isShow = true;//Toast工具类输出控制，当为false是将关闭所有调用工具类的Toast提示
+    public static final String FILE_NAME = "share_data";//SharedPreferences写入本地文件默认文件名
 
 }

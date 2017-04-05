@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.example.wangalei.myapplication.R;
 import com.example.wangalei.myapplication.Utils.UtilsPublicStaticValues;
+import com.example.wangalei.myapplication.Utils.UtilsScreen;
 
 import static com.example.wangalei.myapplication.Utils.UtilsSharedPreferences.get;
 import static com.example.wangalei.myapplication.Utils.L.v;
@@ -30,7 +31,7 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        showShort(this,"开始奇妙的旅程！");
+        showShort(this, UtilsScreen.getScreenHeight(this)+"");
         put(this,"start","一次简单的数据写入测试");
         v(get(this,"start","")+"");
         initView();

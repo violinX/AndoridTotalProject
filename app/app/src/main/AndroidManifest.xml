@@ -53,12 +53,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.ShowDemoDialogActivity"></activity>
-        <activity android:name=".Activity.ShowDemoRecyclerViewActivity"></activity>
-        <activity android:name=".Activity.LoginActivity"></activity>
-        <activity android:name=".Activity.NavigationCarouselActivity"></activity>
-        <activity android:name=".Activity.WelCome1Activity"></activity>
-        <activity android:name=".Activity.ShowDemoPickTimeActivity"></activity>
+        <activity android:name=".Activity.ShowDemoDialogActivity" />
+        <activity android:name=".Activity.ShowDemoRecyclerViewActivity" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.NavigationCarouselActivity" />
+        <activity android:name=".Activity.WelCome1Activity" />
+        <activity android:name=".Activity.ShowDemoPickTimeActivity" />
+        <activity android:name=".Activity.ShowDemoTakePhotoActivity"></activity>
     </application>
 
 </manifest>

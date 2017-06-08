@@ -7,6 +7,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
     <style name="style_Dialog_Service" parent="@android:style/Theme.Dialog">
         <item name="android:windowFrame">@null</item><!--边框-->
         <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
@@ -17,14 +18,25 @@
         <item name="android:layout_gravity">center</item>
     </style>
     //WidgetsPickTimeStyle
+
     <style name="widgets_pick_time_dialog_style" parent="android:Theme.Dialog">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowBackground">@color/white</item>
         <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
     </style>
     //WidgetsPickTimeAnimal
+
     <style name="DialogAnimation">
         <item name="android:windowEnterAnimation">@anim/abc_slide_in_bottom</item>
         <item name="android:windowExitAnimation">@anim/abc_slide_out_bottom</item>
     </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

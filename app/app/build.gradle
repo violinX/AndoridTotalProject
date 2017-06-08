@@ -21,14 +21,15 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.4.0'
     compile files('libs/gson-2.8.0.jar')
     compile files('libs/BaiduLBS_Android.jar')
     compile files('libs/httpmime-4.1.2.jar')
     compile files('libs/IndoorscapeAlbumPlugin.jar')
+    //TakePhoto 三方的拍照与相册支持
+    compile 'com.android.support:appcompat-v7:23.4.0'
     compile 'org.xutils:xutils:3.5.0'
-//TakePhoto 三方的拍照与相册支持
     compile 'com.jph.takephoto:takephoto_library:4.0.3'
-
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    testCompile 'junit:junit:4.12'
 }

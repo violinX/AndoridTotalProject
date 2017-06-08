@@ -59,7 +59,13 @@
         <activity android:name=".Activity.NavigationCarouselActivity" />
         <activity android:name=".Activity.WelCome1Activity" />
         <activity android:name=".Activity.ShowDemoPickTimeActivity" />
-        <activity android:name=".Activity.ShowDemoTakePhotoActivity"></activity>
+        <activity android:name=".Activity.ShowDemoTakePhotoActivity" />
+        <activity
+            android:name=".Activity.ShowDemoTakePhotoforActivity"
+            android:label="@string/title_activity_show_demo_take_photofor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activity.ShowDemoTakePhotoResultActivity" />
+        <activity android:name=".Activity.ShowDemoTakePhotoforFragemntActivity"></activity>
     </application>
 
 </manifest>

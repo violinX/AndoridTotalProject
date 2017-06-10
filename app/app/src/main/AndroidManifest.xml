@@ -65,7 +65,8 @@
             android:label="@string/title_activity_show_demo_take_photofor"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Activity.ShowDemoTakePhotoResultActivity" />
-        <activity android:name=".Activity.ShowDemoTakePhotoforFragemntActivity"></activity>
+        <activity android:name=".Activity.ShowDemoTakePhotoforFragemntActivity" />
+        <activity android:name=".Activity.ShowDemoGreenDaoActivity"></activity>
     </application>
 
 </manifest>

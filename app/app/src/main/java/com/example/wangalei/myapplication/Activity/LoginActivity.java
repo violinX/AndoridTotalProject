@@ -48,7 +48,7 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener 
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.tv_GoDemo:
-                Intent intent=new Intent(LoginActivity.this, ShowDemoTakePhotoActivity.class);
+                Intent intent=new Intent(LoginActivity.this, ShowDemoGreenDaoActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);//关掉所要到的界面中间的activity
                 startActivity(intent);
                 break;

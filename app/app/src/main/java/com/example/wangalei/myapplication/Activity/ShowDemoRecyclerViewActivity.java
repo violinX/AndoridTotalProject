@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.wangalei.myapplication.Adapter.DemoDividerItemDecoration;
 import com.example.wangalei.myapplication.R;
 
 import java.util.ArrayList;
@@ -30,6 +31,9 @@ public class ShowDemoRecyclerViewActivity extends AppCompatActivity {
         mRecyclerView = (RecyclerView) findViewById(R.id.id_recyclerview);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.setAdapter(mAdapter = new HomeAdapter());
+        mRecyclerView.addItemDecoration(new DemoDividerItemDecoration(this,
+                DemoDividerItemDecoration.VERTICAL_LIST));
+
     }
 
     protected void initData()

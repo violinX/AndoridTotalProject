@@ -20,6 +20,10 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+
+        //SwipeToLoadLayout 三方工具 更好的解决上拉下拉等问题 2017年6月12日 10:12:01
+        maven { url "https://jitpack.io" }
+
     }
 }
 

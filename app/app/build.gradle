@@ -43,5 +43,13 @@ dependencies {
 
     //GreenDao 数据库三方工具 2017年6月9日 09:40:43
     compile 'org.greenrobot:greendao:3.2.2'
+
+    //SwipeToLoadLayout 三方工具 更好的解决上拉下拉等问题 2017年6月12日 10:12:01
+    compile 'com.github.Aspsine:SwipeToLoadLayout:1.0.4'
+
+    //RecyclerView 相关引用
+    compile 'com.android.support:cardview-v7:21.0.3'
+    compile 'com.android.support:recyclerview-v7:21.0.3'
+
 }
 

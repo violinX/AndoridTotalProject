@@ -39,8 +39,4 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-    <style name="Demo_Recycler_Line_Divider" >
-        <item name="android:listDivider">@drawable/divider_bg</item>
-    </style>
-
 </resources>
